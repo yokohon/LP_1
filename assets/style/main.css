@@ -477,3 +477,18 @@ table td {
 .guidance img {
   vertical-align: middle;
 }
+
+
+/* footer */
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-copyright {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.813rem;
+
+}
