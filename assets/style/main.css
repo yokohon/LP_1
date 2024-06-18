@@ -1,0 +1,479 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* vertical-align: bottom; */
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+  }
+
+
+/* ロゴ --*/
+.header-logo {
+    line-height: 0;
+    padding-left: 1rem;
+  }
+  
+  .header-logo img {
+    width: 166px;
+    height: 34px;
+  }
+
+/* ハンバーガーボタン --*/
+.hamburger-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #005BAC;
+    padding: 1.375rem;
+  }
+
+  @media (min-width: 768px) {
+    .hamburger-button {
+      display: none;
+    }
+  }
+
+.hamburger-bar {
+    width: 1.823rem;
+    height: 0.25rem;
+    background-color: #fff;
+    margin-bottom: 0.375rem;
+  }
+
+.hamburger-bar:last-child {
+    margin-bottom: 0px;
+  }
+
+
+/* ハンバーガーメニュー */
+  .hamburger-menu {
+    position: fixed;
+    top: 68px;
+    left: 100%;
+    width: 100vw;
+    background-color: #005BAC;
+    transition: all 0.6s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+/* カバーイン後の位置指定 --*/
+.hamburger-menu-active {
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.hamburger-nav {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin: 0;
+}
+
+.hamburger-nav li {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 1.625rem;
+  padding-bottom: 1.5rem;
+
+  border-bottom: 1px solid #fff;;
+}
+
+.bi-arrow-right {
+  padding-right: 0.688rem;
+}
+
+.button_cover {
+  display: block;
+  text-align: center;
+  color: #005BAC;
+  border-radius: 45px;
+  border: 1.6px solid #fff;
+  background-color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 1.438rem 0;
+  max-width: 21.875rem;
+  margin: 2rem auto;
+}
+
+.button_cover:hover {
+  color: #707070;
+  background-color: #7BA8D0;
+  border-color: #707070;
+}
+
+.cover{
+    margin-top: 4.375rem;
+    position: relative;
+  }
+
+.cover-catch {
+  display: flex;
+}
+
+.cover-catch img {
+  height: 4.25rem;
+}
+
+.pass-rate {
+  font-size: 11px;
+} 
+
+.pass-rank {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-style: Italic;
+  font-weight: Bold;
+  color: #F11F8D;
+  text-align: center;
+}
+
+.admission-procedure {
+  margin-top: 1rem;
+}
+
+.target-audience {
+  line-height: 1.44;
+  font-size: 14px;
+  color: #333;
+}
+
+.briefing-session {
+  line-height: 1.44;
+  font-size: 25px;
+  font-weight: 800;
+  color: #005BAC;
+}
+
+.arrangement {
+  position: absolute;
+    left: 1rem;
+    bottom: 2rem;
+}
+
+.three_points {
+  margin-top: 1.563rem;
+}
+
+.button {
+  display: block;
+  line-height: 2.25;
+  text-align: center;
+  border-radius: 45px;
+  border: 1.6px solid #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.03rem 0 0.75rem;
+  max-width: 15.625rem;
+  margin: 0 auto 0.75rem;
+}
+
+.btn_admission {
+  color: #fff;
+  background-color: #77CB33;
+}
+
+.btn_admission:hover {
+  color: #fff;
+  background-color: #BAE498;
+  border-color: #BAE498;
+}
+
+.btn_experience {
+  color: #fff;
+  background-color: #F6AA00;
+}
+
+.btn_experience:hover {
+  color: #fff;
+  background-color: #FAD47E;
+}
+
+.btn_document {
+  color: #fff;
+  background-color: #3AC8AD;
+}
+
+.btn_document:hover {
+  color: #fff;
+  background-color: #9BE3D5;
+}
+
+.content {
+  margin-top: 2.188rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  margin-bottom: 6rem;
+}
+
+.section_title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 0.9;
+  font-size: 1.75rem;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 1.75rem;
+}
+
+.point_three {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #F11F8D;
+}
+
+.point-item {
+  margin-bottom: 2.25rem;
+}
+
+.point-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: Bold;
+  font-style: Italic;
+  color: #F11F8D;
+}
+
+.text_number {
+  font-size: 2.25rem;
+  padding-left: 0.563rem;
+}
+
+.point_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+
+.briefing_session {
+  background-color: RGB(255 85 85 / .1);
+  padding-top: 2.813rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.briefing_session p {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.session_btn {
+  background-color: #0271E0;
+  line-height: 1.8;
+  font-size: 1.25rem;
+  max-width: 19.125em;
+  padding-top: 1.313rem;
+  padding-bottom: 1.313rem;
+}
+
+.session_btn:hover {
+  background-color: #A4C5ED;
+}
+
+
+
+/* コース・目的 */
+.corse_tab_content {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* タブナビゲーション --*/
+.tab.st>.nav {
+  font-size: 1.125rem;
+  /* tab同士の余白 */
+  column-gap: 1.125rem;
+  flex-direction: row !important;
+  padding-right: 1.125rem;
+  padding-left: 1.125rem;
+}
+
+.tab.st-theme-basic>.nav {
+  box-shadow: none;
+}
+
+.tab.st-theme-basic>.nav .nav-link {
+  padding: 1.688rem 0 1.375rem;
+  line-height: 1;
+  background-color: #F0F0F0;
+  color: #929292;
+  border-radius: 8px 8px 0 0;
+}
+
+/* アクティブ状態 --*/
+.tab.st-theme-basic>.nav .nav-link.active {
+  font-size: 1.125rem;
+  color: #333 !important;
+  background-color: #F2F9FF;
+}
+
+.tab.st-theme-basic>.nav .nav-link.active::after {
+  background-color: unset !important;
+}
+
+.nav-tab {
+  font-size: 1.125rem;
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+
+.course-tab-p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.course-age {
+  margin-top: -0.3rem;
+}
+
+
+.course-tab-content-items {
+  text-align: center;
+  margin-top: -0.25rem;
+}
+
+/* タブコンテンツ */
+.tab-content {
+  text-align: center;
+  background-color: #F2F9FF;
+  border-radius: 0 0 0.45rem 0.45rem;
+}
+
+.st>.tab-content>.tab-pane {
+  border-radius: 6px;
+  padding-top: 1.75rem;
+  padding-bottom: 3.375rem;
+}
+
+.course-tab-content-item:not(:last-child) {
+  margin-bottom: 1.938rem
+}
+
+.course-tab-content-title {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: start;
+}
+
+
+/* 費用 */
+
+table {
+  width: 100%;
+  line-height: 1;
+  border: 2px solid #ddd;
+  border-collapse: collapse;
+  margin-top: 11.4px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: #f5f5f5f5;
+  padding: 1.3rem 0.8rem;
+}
+
+table td {
+  padding-top: 1rem;
+  padding-bottom: 12px;
+}
+
+.price-list {
+  width: 241px;
+}
+
+.price-list-text {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.price-list-money {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #F23397;
+}
+.money_en {
+  font-size: 0.884rem;
+}
+
+/* 案内所 */
+.question {
+  position: relative;
+}
+
+.question p {
+  position: absolute;
+  top:35%;
+  left: 5%;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.search {
+  position: relative;
+}
+
+.search p {
+  position: absolute;
+  top:35%;
+  left: 5%;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.guidance img {
+  vertical-align: middle;
+}
