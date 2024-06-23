@@ -33,17 +33,29 @@ p {
     position: fixed;
     top: 0;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #fff;
     width: 100%;
   }
 
+.header-parts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+@media (min-width: 768px) {
+  .header-parts {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+}
+
 
 /* ロゴ --*/
 .header-logo {
-    line-height: 0;
+    line-height: 1;
     padding-left: 1rem;
   }
   
@@ -102,10 +114,8 @@ p {
     .hamburger-menu {
       position: static;
       display: flex;
-      justify-content: center;
-      height: auto;
-      padding: 0;
-      margin: 0;
+      max-width: 810px;
+      justify-content: space-around;
       visibility: visible;
       opacity: 100%;
       background-color: #fff;
@@ -118,6 +128,7 @@ p {
   visibility: visible;
   opacity: 1;
 }
+
 .hamburger-nav {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -129,6 +140,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
   }
 }
 
@@ -146,7 +158,7 @@ p {
   .hamburger-nav a {
     color: #333;
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 
@@ -181,22 +193,25 @@ p {
   margin: 2rem auto;
 }
 
+.button_cover:hover {
+  color: #4084C0;
+  background-color: #80ADD5;
+  border: 1.6px solid #80ADD5;
+}
+
 @media (min-width: 768px) {
   .button_cover {
     font-size: 1.25rem;
     color: #fff;
-    background-color: #005BAC;
+    background-color: #4084C0;
     padding: 1.438rem 2.5rem;
     margin: 0;
   }
 }
 
-.button_cover:hover {
-  color: #707070;
-  background-color: #7BA8D0;
-  border-color: #707070;
-}
 
+
+/* カバー */
 .cover{
     margin-top: 4.375rem;
     position: relative;
@@ -210,9 +225,22 @@ p {
   height: 4.25rem;
 }
 
+@media (min-width: 768px) {
+  .cover-catch img {
+    height: 9.375rem;
+  }
+}
+
 .pass-rate {
   font-size: 11px;
 } 
+
+@media (min-width: 768px) {
+  .pass-rate {
+    line-height: 1;
+    font-size: 1.25rem;
+  } 
+}
 
 .pass-rank {
   font-family: 'Poppins', sans-serif;
@@ -223,6 +251,18 @@ p {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .pass-rank {
+    font-size: 3.375rem;
+  } 
+}
+
+@media (min-width: 768px) {
+  .pass-rank span {
+    font-size: 4.5rem;
+  } 
+}
+
 .admission-procedure {
   margin-top: 1rem;
 }
@@ -230,14 +270,27 @@ p {
 .target-audience {
   line-height: 1.44;
   font-size: 14px;
+  font-weight: 400;
   color: #333;
+}
+
+@media (min-width: 768px) {
+  .target-audience {
+    font-size: 2.063rem;
+  }
 }
 
 .briefing-session {
   line-height: 1.44;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 900;
   color: #005BAC;
+}
+
+@media (min-width: 768px) {
+  .briefing-session {
+font-size: 3.75rem;
+  }
 }
 
 .arrangement {
@@ -246,8 +299,28 @@ p {
     bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .arrangement {
+    left: 25.625rem;
+    bottom: 8.065rem;
+  }
+}
+
 .three_points {
   margin-top: 1.563rem;
+}
+
+@media (min-width: 768px) {
+  .three_points {
+    display: flex;
+    column-gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .button {
@@ -261,6 +334,15 @@ p {
   padding: 1.03rem 0 0.75rem;
   max-width: 15.625rem;
   margin: 0 auto 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .button {
+    min-width: 22.25rem;
+  font-size: 1.5rem;
+  padding: 1.25rem 3.875rem;
+  margin: 0;
+}
 }
 
 .btn_admission {
@@ -314,6 +396,11 @@ p {
   padding-bottom: 1.75rem;
 }
 
+@media (min-width: 768px) {
+  .section_title {
+    margin-top: 10rem;
+  }
+}
 .point_three {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
@@ -548,5 +635,4 @@ footer {
 .footer-copyright {
   font-family: 'Poppins', sans-serif;
   font-size: 0.813rem;
-
 }

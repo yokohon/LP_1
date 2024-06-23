@@ -39,33 +39,32 @@
 <body>
     <!-- ヘッダー -->
     <header class="header">
-        <h1 class="header-logo">
-            <a href="#"><img src="assets\image\header_logo.svg" alt=""></a>
-        </h1>
+        <div class="header-parts">
+            <h1 class="header-logo">
+                <a href="#"><img src="assets\image\header_logo.svg" alt=""></a>
+            </h1>
 
-        <!-- ハンバーガーボタン -->
-        <button type="button" class="hamburger-button">
-            <span class="hamburger-bar"></span>
-            <span class="hamburger-bar"></span>
-            <span class="hamburger-bar"></span>
-        </button>
+            <!-- ハンバーガーボタン -->
+            <button type="button" class="hamburger-button">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
 
-        <!-- ハンバーガーメニュー -->
-        <nav class="hamburger-menu">
-            <ul class="hamburger-nav">
-                <li><a href=""><i class="bi bi-arrow-right"></i>選ばれる3つの理由</a></li>
-                <li><a href=""><i class="bi bi-arrow-right"></i>コース・目的</a></li>
-                <li><a href=""><i class="bi bi-arrow-right"></i>費 用</a></li>
-            </ul>
-            <a href="#" class="button_cover">入学説明会に申し込む</a>
-
-        </nav>
-
-
+            <!-- ハンバーガーメニュー -->
+            <nav class="hamburger-menu">
+                <ul class="hamburger-nav">
+                    <li><a href="#point-content"><i class="bi bi-arrow-right"></i>選ばれる3つの理由</a></li>
+                    <li><a href="#produce-content"><i class="bi bi-arrow-right"></i>コース・目的</a></li>
+                    <li><a href=""><i class="bi bi-arrow-right"></i>費 用</a></li>
+                </ul>
+                <a href="#" class="button_cover">入学説明会に申し込む</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
 
+    <main>
 
         <div class="cover">
             <picture>
@@ -100,7 +99,7 @@
         </section>
 
         <section>
-            <div class="content">
+            <div class="content point-content">
                 <h2 class="section_title">選ばれる<span class="point_three">3</span>つの理由</h2>
 
                 <div class="point-item">
@@ -146,7 +145,7 @@
         </div>
 
         <section>
-            <div class="content corse_tab_content">
+            <div class="content corse_tab_content produce-content">
                 <h2 class="section_title">コース・目的</h2>
 
                 <!-- タブ -->
@@ -288,7 +287,7 @@
             <div class="guidance">
                 <div class="question">
                     <a href="">
-                    <img src="assets\image\faqd_sp.jpg" alt="">
+                        <img src="assets\image\faqd_sp.jpg" alt="">
                         <p>よくあるご質問</p>
                     </a>
                 </div>
@@ -305,7 +304,7 @@
     <footer>
         <div>
             <small class="footer-copyright">copyright© 2023 Kira-Kira Juku All Rights Reserved.</small>
-          </div>
+        </div>
     </footer>
 </body>
 <!-- jQuery -->
