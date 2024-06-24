@@ -383,6 +383,14 @@ font-size: 3.75rem;
   margin-bottom: 6rem;
 }
 
+@media (min-width: 768px) {
+  .content {
+    max-width: 1200px;
+    margin:auto;
+    margin-top: 10rem;
+  }
+}
+
 .section_title {
   display: flex;
   justify-content: center;
@@ -398,7 +406,8 @@ font-size: 3.75rem;
 
 @media (min-width: 768px) {
   .section_title {
-    margin-top: 10rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
   }
 }
 .point_three {
@@ -408,8 +417,39 @@ font-size: 3.75rem;
   color: #F11F8D;
 }
 
+@media (min-width: 768px) {
+  .point_three {
+    font-size: 3.375rem;
+  }
+}
+
 .point-item {
   margin-bottom: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .point-item {
+    display: flex;
+    column-gap: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .point-even {
+    flex-direction: row-reverse;
+  }
+}
+ 
+@media (min-width: 768px) {
+  .point-img {
+    width: 46%;
+  }
+}
+
+@media (min-width: 768px) {
+  .point-text {
+    width: 46%;
+  }
 }
 
 .point-text h2 {
@@ -420,9 +460,22 @@ font-size: 3.75rem;
   color: #F11F8D;
 }
 
+@media (min-width: 768px) {
+  .point-text h2 {
+    font-size: 1.75rem;
+  }
+}
+
 .text_number {
   font-size: 2.25rem;
+  font-style: italic;
   padding-left: 0.563rem;
+}
+
+@media (min-width: 768px) {
+  .text-number {
+font-size: 2.625rem;
+  }
 }
 
 .point_title {
@@ -431,6 +484,11 @@ font-size: 3.75rem;
   margin-bottom: 0.75rem;
 }
 
+@media (min-width: 768px) {
+  .point_title {
+    font-size: 1.5rem;
+  }
+}
 
 .briefing_session {
   background-color: RGB(255 85 85 / .1);
