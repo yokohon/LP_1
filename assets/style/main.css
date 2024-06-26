@@ -214,7 +214,6 @@ p {
 /* カバー */
 .cover{
     margin-top: 4.375rem;
-    position: relative;
   }
 
 .cover-catch {
@@ -293,8 +292,25 @@ font-size: 3.75rem;
   }
 }
 
-.arrangement {
-  position: absolute;
+
+
+
+/* カバー文字位置 */
+
+.cover-content {
+    max-width: 343px;
+    margin:0 auto;
+  }
+
+
+@media (min-width: 768px) {
+.cover-content {
+    max-width: 1200px;
+    margin:0 auto;
+  }
+}
+
+/* .arrangement {
     left: 1rem;
     bottom: 2rem;
 }
@@ -304,7 +320,7 @@ font-size: 3.75rem;
     left: 25.625rem;
     bottom: 8.065rem;
   }
-}
+} */
 
 .three_points {
   margin-top: 1.563rem;
@@ -312,14 +328,12 @@ font-size: 3.75rem;
 
 @media (min-width: 768px) {
   .three_points {
+    margin-top: 0;
     display: flex;
     column-gap: 2.5rem;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
   }
 }
 
@@ -386,8 +400,8 @@ font-size: 3.75rem;
 @media (min-width: 768px) {
   .content {
     max-width: 1200px;
-    margin:auto;
-    margin-top: 10rem;
+    margin:0 auto;
+    padding-top: 10rem;
   }
 }
 
@@ -407,9 +421,10 @@ font-size: 3.75rem;
 @media (min-width: 768px) {
   .section_title {
     font-size: 2rem;
-    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 }
+
 .point_three {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
@@ -430,6 +445,8 @@ font-size: 3.75rem;
 @media (min-width: 768px) {
   .point-item {
     display: flex;
+    justify-content: center;
+    align-items: center;
     column-gap: 40px;
   }
 }
@@ -449,6 +466,8 @@ font-size: 3.75rem;
 @media (min-width: 768px) {
   .point-text {
     width: 46%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -490,18 +509,20 @@ font-size: 2.625rem;
   }
 }
 
+  .point_text p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
 .briefing_session {
   background-color: RGB(255 85 85 / .1);
-  padding-top: 2.813rem;
-  padding-bottom: 2.5rem;
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
+  padding: 2.813rem 2.25rem 2.5rem;
+  text-align: center;
 }
 
 .briefing_session p {
   margin-bottom: 1.25rem;
   font-size: 1rem;
-  text-align: center;
 }
 
 .session_btn {
@@ -517,6 +538,14 @@ font-size: 2.625rem;
   background-color: #A4C5ED;
 }
 
+@media (min-width: 768px) {
+  .session_btn {
+    min-width: 22.25rem;
+  font-size: 1.5rem;
+  padding: 1.25rem 3.875rem;
+margin: auto;
+}
+}
 
 
 /* コース・目的 */
