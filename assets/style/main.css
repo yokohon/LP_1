@@ -176,6 +176,7 @@ p {
 
 
 .bi-arrow-right {
+  color: #005BAC;
   padding-right: 0.688rem;
 }
 
@@ -216,6 +217,13 @@ p {
     margin-top: 4.375rem;
     position: relative;
   }
+
+  @media (min-width: 768px) {
+    .cover {
+      margin-top: 6.126rem;
+    }
+  }
+
 
 .cover-catch {
   display: flex;
@@ -299,21 +307,31 @@ font-size: 3.75rem;
 /* カバー文字位置 */
 
 .cover-content {
+  width: 100%;
     max-width: 343px;
+    position: absolute;
     margin:0 auto;
-
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 2rem;
   }
 
 
 @media (min-width: 768px) {
 .cover-content {
+  width: 100%;
     max-width: 1100px;
     margin:0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 6.25rem;
   }
 }
 
 .arrangement {
-position: absolute;
+
     bottom: 2rem;
 }
 
@@ -392,7 +410,7 @@ position: absolute;
 }
 
 .content {
-  margin-top: 2.188rem;
+  padding-top: 2.188rem;
   margin-left: 1.2rem;
   margin-right: 1.2rem;
   margin-bottom: 6rem;
@@ -402,7 +420,8 @@ position: absolute;
   .content {
     max-width: 1200px;
     margin:0 auto;
-    padding-top: 10rem;
+    padding-top: 5rem;
+    margin-bottom: 4.375rem;
   }
 }
 
@@ -584,16 +603,28 @@ margin: auto;
   background-color: #F2F9FF;
 }
 
+@media (min-width: 768px) {
+  .tab.st-theme-basic>.nav .nav-link.active {
+    font-size: 1.5rem;
+  }
+}
+
 .tab.st-theme-basic>.nav .nav-link.active::after {
   background-color: unset !important;
 }
+
+@media (min-width: 768px) {
+  .tab.st-theme-basic>.nav .nav-link  {
+    font-size: 1.5rem;
+  }
+}
+
 
 .nav-tab {
   font-size: 1.125rem;
   font-family: 'Poppins';
   font-weight: 700;
 }
-
 
 .course-tab-p {
   font-size: 1rem;
@@ -624,6 +655,13 @@ margin: auto;
   padding-bottom: 3.375rem;
 }
 
+@media (min-width: 768px) {
+  .st>.tab-content>.tab-pane {
+padding: 2.625rem 1.25rem;
+  }
+}
+
+
 .course-tab-content-item:not(:last-child) {
   margin-bottom: 1.938rem
 }
@@ -635,10 +673,23 @@ margin: auto;
   text-align: start;
 }
 
+@media (min-width: 768px) {
+.tab_parallel {
+  display: flex;
+  grid-gap: 2.875rem;
+}
+}
+
 
 /* 費用 */
+@media (min-width: 768px) {
+.price-content {
+  margin-bottom: 4.5rem;
+}
+}
 
 table {
+  font-size: 1.125rem;
   width: 100%;
   line-height: 1;
   border: 2px solid #ddd;
@@ -646,11 +697,19 @@ table {
   margin-top: 11.4px;
 }
 
+@media (min-width: 768px) {
+  table {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
 table th,
 table td {
   border: 1px solid #ddd;
   text-align: center;
   vertical-align: middle;
+
 }
 
 table th {
@@ -661,6 +720,12 @@ table th {
 table td {
   padding-top: 1rem;
   padding-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .price-course {
+    width: 145px;
+  }
 }
 
 .price-list {
@@ -678,38 +743,94 @@ table td {
   font-weight: bold;
   color: #F23397;
 }
+@media (min-width: 768px) {
+  .price-list-money {
+font-size: 2rem;
+  }
+}
+
 .money_en {
   font-size: 0.884rem;
 }
 
+@media (min-width: 768px) {
+  .money_en {
+font-size: 1.125rem;
+  }
+}
+
 /* 案内所 */
+
+@media (min-width: 768px) {
+  .guidance {
+    display: flex;
+  }
+}
+
+  .question {
+    height: 174px;
+    width: 100%;
+    background-image: url(/../assets/image/faq_sp.jpg);
+    background-repeat: no-repeat;
+  }
+
+@media (min-width: 768px) {
 .question {
-  position: relative;
+  height: 320px;
+  width: 50%;
+  background-image: url(/../assets/image/faq_pc.jpg);
+  background-repeat: no-repeat;
+}
 }
 
 .question p {
-  position: absolute;
-  top:35%;
-  left: 5%;
   font-size: 1.375rem;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .question p {
+    font-size: 2rem;
+  }
 }
 
 .search {
-  position: relative;
+  height: 174px;
+  width: 100%;
+  background-image: url(/../assets/image/pht_sp.jpg);
+  background-repeat: no-repeat;
 }
 
+@media (min-width: 768px) {
+.search {
+  height: 320px;
+  width: 50%;
+  background-image: url(/../assets/image/pht_pc.jpg);
+  background-repeat: no-repeat;
+}
+}
+
+
+
 .search p {
-  position: absolute;
-  top:35%;
-  left: 5%;
   font-size: 1.375rem;
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  .search p {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+/* 
 .guidance img {
   vertical-align: middle;
-}
+} */
 
 
 /* footer */
