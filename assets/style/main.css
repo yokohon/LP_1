@@ -764,7 +764,6 @@ font-size: 1.125rem;
 @media (min-width: 768px) {
   .guidance {
     display: flex;
-
   }
 }
 
@@ -774,13 +773,27 @@ font-size: 1.125rem;
     background-repeat: no-repeat;
   }
 
+  @media (min-width: 768px) {
+    .question_zoom {
+      overflow: hidden;
+      width: 100%;
+    }
+  }
+
 @media (min-width: 768px) {
 .question {
-  width: 100%;
   background-image: url(/../assets/image/faq_pc.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .7s all;
   aspect-ratio: 960 / 320;
+}
+}
+
+  @media (min-width: 768px) {
+    .question:hover {
+      transform: scale(1.2,1.2);
+      cursor: pointer;
 }
 }
 
@@ -798,6 +811,16 @@ font-size: 1.125rem;
   }
 }
 
+@media (min-width: 768px) {
+  .question p:hover {
+    color: RGB(255 255 255 / .25);
+    background-color: RGB(255 255 255 / .25);
+  }
+}
+
+
+
+
 .search {
   width: 100%;
   background-image: url(/../assets/image/pht_sp.jpg);
@@ -805,15 +828,30 @@ font-size: 1.125rem;
 }
 
 @media (min-width: 768px) {
+  .search_zoom {
+      overflow: hidden;
+      width: 100%;
+    } 
+  }
+
+@media (min-width: 768px) {
 .search {
   width: 100%;
   background-image: url(/../assets/image/pht_pc.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .7s all;
   aspect-ratio: 960 / 320;
+
 }
 }
 
+@media (min-width: 768px) {
+  .search:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
 
 .search p {
   font-size: 1.375rem;
@@ -826,6 +864,13 @@ font-size: 1.125rem;
   .search p {
     font-size: 2rem;
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .search p:hover {
+    color: RGB(255 255 255 / .25);
+    background-color: RGB(255 255 255 / .25);
   }
 }
 
