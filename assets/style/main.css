@@ -577,6 +577,7 @@ margin: auto;
 /* タブナビゲーション --*/
 .tab.st>.nav {
   font-size: 1.125rem;
+  
   /* tab同士の余白 */
   column-gap: 1.125rem;
   flex-direction: row !important;
@@ -619,7 +620,6 @@ margin: auto;
   }
 }
 
-
 .nav-tab {
   font-size: 1.125rem;
   font-family: 'Poppins';
@@ -631,11 +631,9 @@ margin: auto;
   text-align: center;
 }
 
-
 .course-age {
   margin-top: -0.3rem;
 }
-
 
 .course-tab-content-items {
   text-align: center;
@@ -661,7 +659,6 @@ padding: 2.625rem 1.25rem;
   }
 }
 
-
 .course-tab-content-item:not(:last-child) {
   margin-bottom: 1.938rem
 }
@@ -679,6 +676,260 @@ padding: 2.625rem 1.25rem;
   grid-gap: 2.875rem;
 }
 }
+
+
+
+/* 高校生 sp*/
+.cours_img {
+  width: 100%;
+  background-image: url(/../assets/image/high_school_course_01_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 343 / 220;
+}
+
+@media (min-width: 768px) {
+  .course-tab-content-item_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.course-1 {
+background-size: cover;
+transition: .7s all;
+aspect-ratio: 532 / 329;
+}
+}
+
+@media (min-width: 768px) {
+  .course-1:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
+
+/* 高校生3年 sp*/
+.cours_img_2 {
+  width: 100%;
+  background-image: url(/../assets/image/high_school_course_02_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 343 / 220;
+}
+
+@media (min-width: 768px) {
+  .course-tab-content-item_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.course-2 {
+background-size: cover;
+transition: .7s all;
+aspect-ratio: 532 / 329;
+}
+}
+
+@media (min-width: 768px) {
+  .course-2:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
+
+/* 高校生2年 sp */
+.cours_img_3 {
+  width: 100%;
+  background-image: url(/../assets/image/high_school_course_03_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 343 / 220;
+}
+
+@media (min-width: 768px) {
+  .course-tab-content-item_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.course-3 {
+background-size: cover;
+transition: .7s all;
+aspect-ratio: 532 / 329;
+}
+}
+
+@media (min-width: 768px) {
+  .course-3:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
+
+/* 高校生1年 sp */
+.cours_img_4 {
+  width: 100%;
+  background-image: url(/../assets/image/high_school_course_04_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 343 / 220;
+}
+
+@media (min-width: 768px) {
+  .course-tab-content-item_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.course-4 {
+background-size: cover;
+transition: .7s all;
+aspect-ratio: 532 / 329;
+}
+}
+
+@media (min-width: 768px) {
+  .course-4:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
+
+/* 難関 sp */
+.cours_img_5 {
+  width: 100%;
+  background-image: url(/../assets/image/university_01_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 343 / 220;
+}
+
+@media (min-width: 768px) {
+  .course-tab-content-item_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.course-5 {
+background-size: cover;
+transition: .7s all;
+aspect-ratio: 532 / 329;
+}
+}
+
+@media (min-width: 768px) {
+  .course-5:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
+
+/* 名門 sp*/
+.cours_img_6 {
+  width: 100%;
+  background-image: url(/../assets/image/university_02_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 343 / 220;
+}
+
+@media (min-width: 768px) {
+  .course-tab-content-item_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.course-6 {
+background-size: cover;
+transition: .7s all;
+aspect-ratio: 532 / 329;
+}
+}
+
+@media (min-width: 768px) {
+  .course-6:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
+
+/* 国大 sp */
+.cours_img_7 {
+  width: 100%;
+  background-image: url(/../assets/image/university_03_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 343 / 220;
+}
+
+@media (min-width: 768px) {
+  .course-tab-content-item_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.course-7 {
+background-size: cover;
+transition: .7s all;
+aspect-ratio: 532 / 329;
+}
+}
+
+@media (min-width: 768px) {
+  .course-7:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
+
+/* 海外 sp */
+.cours_img_8 {
+  width: 100%;
+  background-image: url(../../assets/image/university_04_sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 343 / 220;
+}
+
+@media (min-width: 768px) {
+  .course-tab-content-item_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.course-8 {
+background-size: cover;
+transition: .7s all;
+aspect-ratio: 532 / 329;
+}
+}
+
+@media (min-width: 768px) {
+  .course-8:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+}
+
+
+
+
 
 
 /* 費用 */
@@ -759,6 +1010,8 @@ font-size: 1.125rem;
   }
 }
 
+
+
 /* 案内所 */
 
 @media (min-width: 768px) {
@@ -767,6 +1020,7 @@ font-size: 1.125rem;
   }
 }
 
+/* 質問 */
   .question {
     width: 100%;
     background-image: url(/../assets/image/faq_sp.jpg);
@@ -818,9 +1072,7 @@ font-size: 1.125rem;
   }
 }
 
-
-
-
+/* 教室 */
 .search {
   width: 100%;
   background-image: url(/../assets/image/pht_sp.jpg);
