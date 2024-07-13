@@ -16,7 +16,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  /* vertical-align: bottom; */
 }
 
 li {
@@ -476,7 +475,7 @@ font-size: 3.75rem;
     flex-direction: row-reverse;
   }
 }
- 
+
 @media (min-width: 768px) {
   .point-img {
     width: 46%;
@@ -650,7 +649,7 @@ margin: auto;
 .st>.tab-content>.tab-pane {
   border-radius: 6px;
   padding-top: 1.75rem;
-  padding-bottom: 3.375rem;
+  padding-bottom: 1.75rem;
 }
 
 @media (min-width: 768px) {
@@ -659,15 +658,13 @@ padding: 2.625rem 1.25rem;
   }
 }
 
-.course-tab-content-item:not(:last-child) {
-  margin-bottom: 1.938rem
-}
-
 .course-tab-content-title {
   color: #333;
   font-size: 1.25rem;
   font-weight: bold;
   text-align: start;
+  padding-top: 1rem;
+  padding-bottom: 1.875rem;
 }
 
 @media (min-width: 768px) {
@@ -679,7 +676,7 @@ padding: 2.625rem 1.25rem;
 
 
 
-/* 高校生 sp*/
+/* 1個目 高校生 sp*/
 .cours_img {
   width: 100%;
   background-image: url(/../assets/image/high_school_course_01_sp.jpg);
@@ -689,28 +686,32 @@ padding: 2.625rem 1.25rem;
 }
 
 @media (min-width: 768px) {
+  .cours_img {
+    background-image: url(/../assets/image/high_school_course_01_pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .7s all;
+    aspect-ratio: 532 / 329;
+  }
+  }
+  
+  @media (min-width: 768px) {
+    .cours_img:hover {
+      transform: scale(1.2,1.2);
+      cursor: pointer;
+  }
+  }
+
+/* 以下共通 */
+@media (min-width: 768px) {
   .course-tab-content-item_zoom {
     overflow: hidden;
     width: 100%;
   }
 }
 
-@media (min-width: 768px) {
-.course-1 {
-background-size: cover;
-transition: .7s all;
-aspect-ratio: 532 / 329;
-}
-}
 
-@media (min-width: 768px) {
-  .course-1:hover {
-    transform: scale(1.2,1.2);
-    cursor: pointer;
-}
-}
-
-/* 高校生3年 sp*/
+/* 2個目  高校生3年 sp*/
 .cours_img_2 {
   width: 100%;
   background-image: url(/../assets/image/high_school_course_02_sp.jpg);
@@ -720,28 +721,24 @@ aspect-ratio: 532 / 329;
 }
 
 @media (min-width: 768px) {
-  .course-tab-content-item_zoom {
-    overflow: hidden;
-    width: 100%;
+  .cours_img_2 {
+    background-image: url(/../assets/image/high_school_course_02_pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .7s all;
+    aspect-ratio: 532 / 329;
   }
-}
+  }
+  
+  @media (min-width: 768px) {
+    .cours_img_2:hover {
+      transform: scale(1.2,1.2);
+      cursor: pointer;
+  }
+  }
 
-@media (min-width: 768px) {
-.course-2 {
-background-size: cover;
-transition: .7s all;
-aspect-ratio: 532 / 329;
-}
-}
 
-@media (min-width: 768px) {
-  .course-2:hover {
-    transform: scale(1.2,1.2);
-    cursor: pointer;
-}
-}
-
-/* 高校生2年 sp */
+/* 3個目 高校生2年 sp */
 .cours_img_3 {
   width: 100%;
   background-image: url(/../assets/image/high_school_course_03_sp.jpg);
@@ -751,28 +748,24 @@ aspect-ratio: 532 / 329;
 }
 
 @media (min-width: 768px) {
-  .course-tab-content-item_zoom {
-    overflow: hidden;
-    width: 100%;
+  .cours_img_3 {
+    background-image: url(/../assets/image/high_school_course_03_pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .7s all;
+    aspect-ratio: 532 / 329;
   }
-}
+  }
+  
+  @media (min-width: 768px) {
+    .cours_img_3:hover {
+      transform: scale(1.2,1.2);
+      cursor: pointer;
+  }
+  }
 
-@media (min-width: 768px) {
-.course-3 {
-background-size: cover;
-transition: .7s all;
-aspect-ratio: 532 / 329;
-}
-}
 
-@media (min-width: 768px) {
-  .course-3:hover {
-    transform: scale(1.2,1.2);
-    cursor: pointer;
-}
-}
-
-/* 高校生1年 sp */
+/* 4個目 高校生1年 sp */
 .cours_img_4 {
   width: 100%;
   background-image: url(/../assets/image/high_school_course_04_sp.jpg);
@@ -782,28 +775,23 @@ aspect-ratio: 532 / 329;
 }
 
 @media (min-width: 768px) {
-  .course-tab-content-item_zoom {
-    overflow: hidden;
-    width: 100%;
+  .cours_img_4 {
+    background-image: url(/../assets/image/high_school_course_04_pc.jpg);
+  background-size: cover;
+  transition: .7s all;
+  aspect-ratio: 532 / 329;
   }
-}
+  }
+  
+  @media (min-width: 768px) {
+    .cours_img_4:hover {
+      transform: scale(1.2,1.2);
+      cursor: pointer;
+  }
+  }
 
-@media (min-width: 768px) {
-.course-4 {
-background-size: cover;
-transition: .7s all;
-aspect-ratio: 532 / 329;
-}
-}
 
-@media (min-width: 768px) {
-  .course-4:hover {
-    transform: scale(1.2,1.2);
-    cursor: pointer;
-}
-}
-
-/* 難関 sp */
+/* 1個目 難関 sp */
 .cours_img_5 {
   width: 100%;
   background-image: url(/../assets/image/university_01_sp.jpg);
@@ -813,29 +801,24 @@ aspect-ratio: 532 / 329;
 }
 
 @media (min-width: 768px) {
-  .course-tab-content-item_zoom {
-    overflow: hidden;
-    width: 100%;
+  .cours_img_5 {
+    background-image: url(/../assets/image/university_01_pc.jpg);
+    background-size: cover;
+    transition: .7s all;
+    aspect-ratio: 532 / 329;
   }
-}
+  }
+  
+  @media (min-width: 768px) {
+    .cours_img_5:hover {
+      transform: scale(1.2,1.2);
+      cursor: pointer;
+  }
+  }
 
-@media (min-width: 768px) {
-.course-5 {
-background-size: cover;
-transition: .7s all;
-aspect-ratio: 532 / 329;
-}
-}
 
-@media (min-width: 768px) {
-  .course-5:hover {
-    transform: scale(1.2,1.2);
-    cursor: pointer;
-}
-}
-
-/* 名門 sp*/
-.cours_img_6 {
+/* 2個目 名門 sp*/
+.ccours_img_6 {
   width: 100%;
   background-image: url(/../assets/image/university_02_sp.jpg);
   background-size: cover;
@@ -844,28 +827,23 @@ aspect-ratio: 532 / 329;
 }
 
 @media (min-width: 768px) {
-  .course-tab-content-item_zoom {
-    overflow: hidden;
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-.course-6 {
-background-size: cover;
-transition: .7s all;
-aspect-ratio: 532 / 329;
+.cours_img_6 {
+  background-image: url(/../assets/image/university_02_pc.jpg);
+  background-size: cover;
+  transition: .7s all;
+  aspect-ratio: 532 / 329;
 }
 }
 
 @media (min-width: 768px) {
-  .course-6:hover {
+  .cours_img_6:hover {
     transform: scale(1.2,1.2);
     cursor: pointer;
 }
 }
 
-/* 国大 sp */
+
+/* 3個目 国大 sp */
 .cours_img_7 {
   width: 100%;
   background-image: url(/../assets/image/university_03_sp.jpg);
@@ -875,28 +853,23 @@ aspect-ratio: 532 / 329;
 }
 
 @media (min-width: 768px) {
-  .course-tab-content-item_zoom {
-    overflow: hidden;
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-.course-7 {
-background-size: cover;
-transition: .7s all;
-aspect-ratio: 532 / 329;
+  .cours_img_7 {
+    background-image: url(/../assets/image/university_03_pc.jpg);
+    background-size: cover;
+    transition: .7s all;
+    aspect-ratio: 532 / 329;
 }
 }
 
 @media (min-width: 768px) {
-  .course-7:hover {
+  .cours_img_7:hover {
     transform: scale(1.2,1.2);
     cursor: pointer;
 }
 }
 
-/* 海外 sp */
+
+/* 4個目 海外 sp */
 .cours_img_8 {
   width: 100%;
   background-image: url(../../assets/image/university_04_sp.jpg);
@@ -906,29 +879,20 @@ aspect-ratio: 532 / 329;
 }
 
 @media (min-width: 768px) {
-  .course-tab-content-item_zoom {
-    overflow: hidden;
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-.course-8 {
-background-size: cover;
-transition: .7s all;
-aspect-ratio: 532 / 329;
+.cours_img_8 {
+  background-image: url(/../assets/image/university_04_pc.jpg);
+  background-size: cover;
+  transition: .7s all;
+  aspect-ratio: 532 / 329;
 }
 }
 
 @media (min-width: 768px) {
-  .course-8:hover {
+  .cours_img_8:hover {
     transform: scale(1.2,1.2);
     cursor: pointer;
 }
 }
-
-
-
 
 
 
@@ -1025,13 +989,8 @@ font-size: 1.125rem;
     width: 100%;
     background-image: url(/../assets/image/faq_sp.jpg);
     background-repeat: no-repeat;
-  }
-
-  @media (min-width: 768px) {
-    .question_zoom {
-      overflow: hidden;
-      width: 100%;
-    }
+    background-size: cover;
+    aspect-ratio: 390 / 170;
   }
 
 @media (min-width: 768px) {
@@ -1044,16 +1003,25 @@ font-size: 1.125rem;
 }
 }
 
-  @media (min-width: 768px) {
-    .question:hover {
-      transform: scale(1.2,1.2);
-      cursor: pointer;
+@media (min-width: 768px) {
+  .question:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+  }
 }
+
+@media (min-width: 768px) {
+  .question_zoom {
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .question p {
   font-size: 1.375rem;
   font-weight: bold;
+  padding-top: calc(170 / 960 * 100%);
+  padding-bottom: calc(170 / 960 * 100%);
 }
 
 @media (min-width: 768px) {
@@ -1077,14 +1045,9 @@ font-size: 1.125rem;
   width: 100%;
   background-image: url(/../assets/image/pht_sp.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 390 / 170;
 }
-
-@media (min-width: 768px) {
-  .search_zoom {
-      overflow: hidden;
-      width: 100%;
-    } 
-  }
 
 @media (min-width: 768px) {
 .search {
@@ -1094,7 +1057,6 @@ font-size: 1.125rem;
   background-size: cover;
   transition: .7s all;
   aspect-ratio: 960 / 320;
-
 }
 }
 
@@ -1105,17 +1067,26 @@ font-size: 1.125rem;
 }
 }
 
+@media (min-width: 768px) {
+  .search_zoom {
+      overflow: hidden;
+      width: 100%;
+    } 
+  }
+
 .search p {
   font-size: 1.375rem;
   font-weight: bold;
-  padding-top: calc(130 / 960 * 100%);
-  padding-bottom: calc(130 / 960 * 100%);
+  padding-top: calc(170 / 960 * 100%);
+  padding-bottom: calc(170 / 960 * 100%);
 }
 
 @media (min-width: 768px) {
   .search p {
     font-size: 2rem;
     text-align: center;
+    padding-top: calc(130 / 960 * 100%);
+    padding-bottom: calc(130 / 960 * 100%);
   }
 }
 
