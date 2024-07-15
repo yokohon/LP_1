@@ -29,19 +29,19 @@ p {
 
 /* header */
 .header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    background-color: #fff;
-    width: 100%;
-  }
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+}
 
 .header-parts {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-  
+
 @media (min-width: 768px) {
   .header-parts {
     max-width: 1200px;
@@ -54,72 +54,72 @@ p {
 
 /* ロゴ --*/
 .header-logo {
-    line-height: 1;
-    padding-left: 1rem;
-  }
-  
-  .header-logo img {
-    width: 10.375rem;
-    height: 2.125rem;
-  }
+  line-height: 1;
+  padding-left: 1rem;
+}
 
-  @media (min-width: 768px) {
-    .header-logo img {
-    width :15rem;
-    }
+.header-logo img {
+  width: 10.375rem;
+  height: 2.125rem;
+}
+
+@media (min-width: 768px) {
+  .header-logo img {
+    width: 15rem;
   }
-  
+}
+
 /* ハンバーガーボタン --*/
 .hamburger-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #005BAC;
-    padding: 1.375rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #005BAC;
+  padding: 1.375rem;
+}
 
-  @media (min-width: 768px) {
-    .hamburger-button {
-      display: none;
-    }
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none;
   }
+}
 
 .hamburger-bar {
-    width: 1.823rem;
-    height: 0.25rem;
-    background-color: #fff;
-    margin-bottom: 0.375rem;
-  }
+  width: 1.823rem;
+  height: 0.25rem;
+  background-color: #fff;
+  margin-bottom: 0.375rem;
+}
 
 .hamburger-bar:last-child {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 0px;
+}
 
 
 /* ハンバーガーメニュー */
-  .hamburger-menu {
-    position: fixed;
-    top: 68px;
-    left: 100%;
-    width: 100vw;
-    background-color: #005BAC;
-    transition: all 0.6s;
-    visibility: hidden;
-    opacity: 0;
-  }
+.hamburger-menu {
+  position: fixed;
+  top: 68px;
+  left: 100%;
+  width: 100vw;
+  background-color: #005BAC;
+  transition: all 0.6s;
+  visibility: hidden;
+  opacity: 0;
+}
 
-  @media (min-width: 768px) {
-    .hamburger-menu {
-      position: static;
-      display: flex;
-      max-width: 810px;
-      justify-content: space-around;
-      visibility: visible;
-      opacity: 100%;
-      background-color: #fff;
-    }
+@media (min-width: 768px) {
+  .hamburger-menu {
+    position: static;
+    display: flex;
+    max-width: 810px;
+    justify-content: space-around;
+    visibility: visible;
+    opacity: 100%;
+    background-color: #fff;
   }
+}
 
 /* カバーイン後の位置指定 --*/
 .hamburger-menu-active {
@@ -150,7 +150,8 @@ p {
   line-height: 1;
   padding-top: 1.625rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #fff;;
+  border-bottom: 1px solid #fff;
+  ;
 }
 
 @media (min-width: 768px) {
@@ -212,16 +213,16 @@ p {
 
 
 /* カバー */
-.cover{
-    margin-top: 4.375rem;
-    position: relative;
-  }
+.cover {
+  margin-top: 4.375rem;
+  position: relative;
+}
 
-  @media (min-width: 768px) {
-    .cover {
-      margin-top: 6.126rem;
-    }
+@media (min-width: 768px) {
+  .cover {
+    margin-top: 6.126rem;
   }
+}
 
 
 .cover-catch {
@@ -240,13 +241,13 @@ p {
 
 .pass-rate {
   font-size: 11px;
-} 
+}
 
 @media (min-width: 768px) {
   .pass-rate {
     line-height: 1;
     font-size: 1.25rem;
-  } 
+  }
 }
 
 .pass-rank {
@@ -261,13 +262,13 @@ p {
 @media (min-width: 768px) {
   .pass-rank {
     font-size: 3.375rem;
-  } 
+  }
 }
 
 @media (min-width: 768px) {
   .pass-rank span {
     font-size: 4.5rem;
-  } 
+  }
 }
 
 .admission-procedure {
@@ -296,7 +297,7 @@ p {
 
 @media (min-width: 768px) {
   .briefing-session {
-font-size: 3.75rem;
+    font-size: 3.75rem;
   }
 }
 
@@ -307,21 +308,21 @@ font-size: 3.75rem;
 
 .cover-content {
   width: 100%;
-    max-width: 343px;
-    position: absolute;
-    margin:0 auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 2rem;
-  }
+  max-width: 343px;
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 2rem;
+}
 
 
 @media (min-width: 768px) {
-.cover-content {
-  width: 100%;
+  .cover-content {
+    width: 100%;
     max-width: 1100px;
-    margin:0 auto;
+    margin: 0 auto;
     top: 0;
     left: 0;
     right: 0;
@@ -331,14 +332,14 @@ font-size: 3.75rem;
 
 .arrangement {
 
-    bottom: 2rem;
+  bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .arrangement {
     bottom: 8.065rem;
   }
-} 
+}
 
 .three_points {
   margin-top: 1.563rem;
@@ -371,10 +372,10 @@ font-size: 3.75rem;
 @media (min-width: 768px) {
   .button {
     min-width: 22.25rem;
-  font-size: 1.5rem;
-  padding: 1.25rem 3.875rem;
-  margin: 0;
-}
+    font-size: 1.5rem;
+    padding: 1.25rem 3.875rem;
+    margin: 0;
+  }
 }
 
 .btn_admission {
@@ -418,7 +419,7 @@ font-size: 3.75rem;
 @media (min-width: 768px) {
   .content {
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
     padding-top: 5rem;
     margin-bottom: 4.375rem;
   }
@@ -512,7 +513,7 @@ font-size: 3.75rem;
 
 @media (min-width: 768px) {
   .text-number {
-font-size: 2.625rem;
+    font-size: 2.625rem;
   }
 }
 
@@ -528,10 +529,10 @@ font-size: 2.625rem;
   }
 }
 
-  .point_text p {
-    font-size: 1rem;
-    font-weight: bold;
-  }
+.point_text p {
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 .briefing_session {
   background-color: RGB(255 85 85 / .1);
@@ -560,10 +561,10 @@ font-size: 2.625rem;
 @media (min-width: 768px) {
   .session_btn {
     min-width: 22.25rem;
-  font-size: 1.5rem;
-  padding: 1.25rem 3.875rem;
-margin: auto;
-}
+    font-size: 1.5rem;
+    padding: 1.25rem 3.875rem;
+    margin: auto;
+  }
 }
 
 
@@ -576,7 +577,7 @@ margin: auto;
 /* タブナビゲーション --*/
 .tab.st>.nav {
   font-size: 1.125rem;
-  
+
   /* tab同士の余白 */
   column-gap: 1.125rem;
   flex-direction: row !important;
@@ -614,7 +615,7 @@ margin: auto;
 }
 
 @media (min-width: 768px) {
-  .tab.st-theme-basic>.nav .nav-link  {
+  .tab.st-theme-basic>.nav .nav-link {
     font-size: 1.5rem;
   }
 }
@@ -654,9 +655,10 @@ margin: auto;
 
 @media (min-width: 768px) {
   .st>.tab-content>.tab-pane {
-padding: 2.625rem 1.25rem;
+    padding: 2.625rem 1.25rem;
   }
 }
+
 
 .course-tab-content-title {
   color: #333;
@@ -668,239 +670,60 @@ padding: 2.625rem 1.25rem;
 }
 
 @media (min-width: 768px) {
-.tab_parallel {
-  display: flex;
-  grid-gap: 2.875rem;
+  .tab_parallel {
+    display: flex;
+    grid-gap: 2.875rem;
+  }
 }
-}
 
 
-
-/* 1個目 高校生 sp*/
-.cours_img {
+/*タブ中身 */
+.courses_zoom {
   width: 100%;
-  background-image: url(/../assets/image/high_school_course_01_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   aspect-ratio: 343 / 220;
+} 
+
+
+@media (min-width: 768px) {
+  .courses_zoom {
+    aspect-ratio: 532 / 329;
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
-  .cours_img {
-    background-image: url(/../assets/image/high_school_course_01_pc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: .7s all;
-    aspect-ratio: 532 / 329;
+  .courses_zoom img:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
   }
-  }
-  
-  @media (min-width: 768px) {
-    .cours_img:hover {
-      transform: scale(1.2,1.2);
-      cursor: pointer;
-  }
-  }
+}
 
-/* 以下共通 */
 @media (min-width: 768px) {
-  .course-tab-content-item_zoom {
+  .courses_zoom img {
+    transition: .7s all;
+  }
+}
+
+@media (min-width: 768px) {
+  .courses_zoom {
     overflow: hidden;
     width: 100%;
   }
 }
 
 
-/* 2個目  高校生3年 sp*/
-.cours_img_2 {
-  width: 100%;
-  background-image: url(/../assets/image/high_school_course_02_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 343 / 220;
-}
-
-@media (min-width: 768px) {
-  .cours_img_2 {
-    background-image: url(/../assets/image/high_school_course_02_pc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: .7s all;
-    aspect-ratio: 532 / 329;
-  }
-  }
-  
-  @media (min-width: 768px) {
-    .cours_img_2:hover {
-      transform: scale(1.2,1.2);
-      cursor: pointer;
-  }
-  }
 
 
-/* 3個目 高校生2年 sp */
-.cours_img_3 {
-  width: 100%;
-  background-image: url(/../assets/image/high_school_course_03_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 343 / 220;
-}
-
-@media (min-width: 768px) {
-  .cours_img_3 {
-    background-image: url(/../assets/image/high_school_course_03_pc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: .7s all;
-    aspect-ratio: 532 / 329;
-  }
-  }
-  
-  @media (min-width: 768px) {
-    .cours_img_3:hover {
-      transform: scale(1.2,1.2);
-      cursor: pointer;
-  }
-  }
 
 
-/* 4個目 高校生1年 sp */
-.cours_img_4 {
-  width: 100%;
-  background-image: url(/../assets/image/high_school_course_04_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 343 / 220;
-}
-
-@media (min-width: 768px) {
-  .cours_img_4 {
-    background-image: url(/../assets/image/high_school_course_04_pc.jpg);
-  background-size: cover;
-  transition: .7s all;
-  aspect-ratio: 532 / 329;
-  }
-  }
-  
-  @media (min-width: 768px) {
-    .cours_img_4:hover {
-      transform: scale(1.2,1.2);
-      cursor: pointer;
-  }
-  }
-
-
-/* 1個目 難関 sp */
-.cours_img_5 {
-  width: 100%;
-  background-image: url(/../assets/image/university_01_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 343 / 220;
-}
-
-@media (min-width: 768px) {
-  .cours_img_5 {
-    background-image: url(/../assets/image/university_01_pc.jpg);
-    background-size: cover;
-    transition: .7s all;
-    aspect-ratio: 532 / 329;
-  }
-  }
-  
-  @media (min-width: 768px) {
-    .cours_img_5:hover {
-      transform: scale(1.2,1.2);
-      cursor: pointer;
-  }
-  }
-
-
-/* 2個目 名門 sp*/
-.ccours_img_6 {
-  width: 100%;
-  background-image: url(/../assets/image/university_02_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 343 / 220;
-}
-
-@media (min-width: 768px) {
-.cours_img_6 {
-  background-image: url(/../assets/image/university_02_pc.jpg);
-  background-size: cover;
-  transition: .7s all;
-  aspect-ratio: 532 / 329;
-}
-}
-
-@media (min-width: 768px) {
-  .cours_img_6:hover {
-    transform: scale(1.2,1.2);
-    cursor: pointer;
-}
-}
-
-
-/* 3個目 国大 sp */
-.cours_img_7 {
-  width: 100%;
-  background-image: url(/../assets/image/university_03_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 343 / 220;
-}
-
-@media (min-width: 768px) {
-  .cours_img_7 {
-    background-image: url(/../assets/image/university_03_pc.jpg);
-    background-size: cover;
-    transition: .7s all;
-    aspect-ratio: 532 / 329;
-}
-}
-
-@media (min-width: 768px) {
-  .cours_img_7:hover {
-    transform: scale(1.2,1.2);
-    cursor: pointer;
-}
-}
-
-
-/* 4個目 海外 sp */
-.cours_img_8 {
-  width: 100%;
-  background-image: url(../../assets/image/university_04_sp.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  aspect-ratio: 343 / 220;
-}
-
-@media (min-width: 768px) {
-.cours_img_8 {
-  background-image: url(/../assets/image/university_04_pc.jpg);
-  background-size: cover;
-  transition: .7s all;
-  aspect-ratio: 532 / 329;
-}
-}
-
-@media (min-width: 768px) {
-  .cours_img_8:hover {
-    transform: scale(1.2,1.2);
-    cursor: pointer;
-}
-}
 
 
 
 /* 費用 */
 @media (min-width: 768px) {
-.price-content {
-  margin-bottom: 4.5rem;
-}
+  .price-content {
+    margin-bottom: 4.5rem;
+  }
 }
 
 table {
@@ -958,9 +781,10 @@ table td {
   font-weight: bold;
   color: #F23397;
 }
+
 @media (min-width: 768px) {
   .price-list-money {
-font-size: 2rem;
+    font-size: 2rem;
   }
 }
 
@@ -970,7 +794,7 @@ font-size: 2rem;
 
 @media (min-width: 768px) {
   .money_en {
-font-size: 1.125rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -985,27 +809,27 @@ font-size: 1.125rem;
 }
 
 /* 質問 */
-  .question {
-    width: 100%;
-    background-image: url(/../assets/image/faq_sp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    aspect-ratio: 390 / 170;
-  }
-
-@media (min-width: 768px) {
 .question {
-  background-image: url(/../assets/image/faq_pc.jpg);
+  width: 100%;
+  background-image: url(/../assets/image/faq_sp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  transition: .7s all;
-  aspect-ratio: 960 / 320;
+  aspect-ratio: 390 / 170;
 }
+
+@media (min-width: 768px) {
+  .question {
+    background-image: url(/../assets/image/faq_pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .7s all;
+    aspect-ratio: 960 / 320;
+  }
 }
 
 @media (min-width: 768px) {
   .question:hover {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
     cursor: pointer;
   }
 }
@@ -1050,29 +874,29 @@ font-size: 1.125rem;
 }
 
 @media (min-width: 768px) {
-.search {
-  width: 100%;
-  background-image: url(/../assets/image/pht_pc.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: .7s all;
-  aspect-ratio: 960 / 320;
-}
+  .search {
+    width: 100%;
+    background-image: url(/../assets/image/pht_pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .7s all;
+    aspect-ratio: 960 / 320;
+  }
 }
 
 @media (min-width: 768px) {
   .search:hover {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
     cursor: pointer;
-}
+  }
 }
 
 @media (min-width: 768px) {
   .search_zoom {
-      overflow: hidden;
-      width: 100%;
-    } 
+    overflow: hidden;
+    width: 100%;
   }
+}
 
 .search p {
   font-size: 1.375rem;
@@ -1111,4 +935,3 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: 0.813rem;
 }
-
