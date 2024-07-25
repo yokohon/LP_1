@@ -102,8 +102,7 @@ p {
 .hamburger-menu {
   position: fixed;
   top: 68px;
-  left: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: #005BAC;
   transition: all 0.6s;
   visibility: hidden;
@@ -124,7 +123,6 @@ p {
 
 /* カバーイン後の位置指定 --*/
 .hamburger-menu-active {
-  left: 10%;
   visibility: visible;
   opacity: 1;
 }
@@ -149,10 +147,14 @@ p {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1;
-  padding-top: 1.625rem;
+  padding-top: 1.6rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #fff;
   ;
+}
+
+.hamburger-nav li:not(:first-child) {
+  padding-top: 1.4rem;
 }
 
 @media (min-width: 768px) {
@@ -190,8 +192,8 @@ p {
   background-color: #fff;
   font-size: 1.125rem;
   font-weight: bold;
-  padding: 1.438rem 0;
-  max-width: 21.875rem;
+  padding: 1.038rem 0;
+  max-width: 18.975rem;
   margin: 2rem auto;
 }
 
@@ -424,7 +426,6 @@ p {
   padding-top: 2.088rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 6rem;
 }
 
 @media (min-width: 768px) {
@@ -470,7 +471,7 @@ p {
 }
 
 .point-item {
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.175rem;
 }
 
 @media (min-width: 768px) {
@@ -517,6 +518,18 @@ p {
   }
 }
 
+.point-text_2 h2 {
+  line-height: 1.4;
+  padding-top: 0.6rem;
+  margin-bottom: 0.1rem;
+}
+
+.point-text_3 h2 {
+  line-height: 1.4;
+  padding-top: 0.4rem;
+  margin-bottom: 0.044rem;
+}
+
 .text_number {
   font-size: 2.25rem;
   font-style: italic;
@@ -535,9 +548,16 @@ p {
   margin-bottom: 0.75rem;
   line-height: 1;
 }
+
 .point_title_2 {
-  line-height: 1.2;
+  line-height: 1.35;
 }
+
+.point_title_3 {
+  line-height: 1.45;
+  margin-bottom: 0.55rem;
+}
+
 
 @media (min-width: 768px) {
   .point_title {
@@ -552,22 +572,21 @@ p {
 
 .briefing_session {
   background-color: RGB(255 85 85 / .1);
-  padding: 2.813rem 2.25rem 2.5rem;
+  padding: 2.413rem 2.25rem 2.5rem;
   text-align: center;
 }
 
 .briefing_session p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.45rem;
   font-size: 1rem;
 }
 
 .session_btn {
   background-color: #0271E0;
-  line-height: 1.8;
   font-size: 1.25rem;
   max-width: 19.125em;
-  padding-top: 1.313rem;
-  padding-bottom: 1.313rem;
+  padding-top: 1.013rem;
+  padding-bottom: 1.113rem;
 }
 
 .session_btn:hover {
@@ -585,9 +604,18 @@ p {
 
 
 /* コース・目的 */
+.corse_content {
+  padding-top: 4.4rem;
+  margin: 0;
+}
+
 .corse_tab_content {
   margin-left: 0;
   margin-right: 0;
+}
+
+.section_title_corse {
+  padding-left: 1rem;
 }
 
 /* タブナビゲーション --*/
@@ -671,6 +699,9 @@ p {
   border-radius: 6px;
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -685,8 +716,8 @@ p {
   font-size: 1.25rem;
   font-weight: bold;
   text-align: start;
-  padding-top: 1rem;
-  padding-bottom: 1.875rem;
+  padding-top: 0.6rem;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -696,12 +727,19 @@ p {
   }
 }
 
+.course-tab-content-title .bi-arrow-right {
+  color: #0271E0;
+  padding: 0;
+  padding-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 
 /*タブ中身 */
 .courses_zoom {
   width: 100%;
   aspect-ratio: 343 / 220;
-} 
+}
 
 
 @media (min-width: 768px) {
@@ -741,6 +779,18 @@ p {
 
 
 /* 費用 */
+.price-content {
+  padding-top: 4.6rem;
+  padding-bottom: 3.9rem;
+}
+
+.section_title_price {
+  padding-left: 1.09rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 0.9rem;
+}
+
+
 @media (min-width: 768px) {
   .price-content {
     margin-bottom: 4.5rem;
@@ -773,12 +823,12 @@ table td {
 
 table th {
   background-color: #f5f5f5f5;
-  padding: 1.3rem 0.8rem;
+  padding: 1.5rem 0.8rem;
 }
 
 table td {
   padding-top: 1rem;
-  padding-bottom: 12px;
+  padding-bottom: 1.2rem;
 }
 
 @media (min-width: 768px) {
@@ -788,7 +838,7 @@ table td {
 }
 
 .price-list {
-  width: 241px;
+  width: 225px;
 }
 
 .price-list-text {
@@ -801,8 +851,17 @@ table td {
   font-size: 1.75rem;
   font-weight: bold;
   color: #F23397;
+  padding-right: 0.5rem;
 }
 
+.price-list-money_pb {
+  padding-bottom: 1.1rem;
+}
+
+.price-list-money_pl {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
 @media (min-width: 768px) {
   .price-list-money {
     font-size: 2rem;
@@ -818,6 +877,12 @@ table td {
     font-size: 1.125rem;
   }
 }
+
+.procedure p {
+  margin-top: 0.1rem;
+  margin-bottom: 0.6rem;
+}
+
 
 
 
@@ -865,8 +930,9 @@ table td {
 .question p {
   font-size: 1.375rem;
   font-weight: bold;
-  padding-top: calc(170 / 960 * 100%);
-  padding-bottom: calc(170 / 960 * 100%);
+  padding-top: calc(161 / 960 * 100%);
+  padding-bottom: calc(173 / 960 * 100%);
+  padding-left: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -922,8 +988,9 @@ table td {
 .search p {
   font-size: 1.375rem;
   font-weight: bold;
-  padding-top: calc(170 / 960 * 100%);
-  padding-bottom: calc(170 / 960 * 100%);
+  padding-top: calc(163 / 960 * 100%);
+  padding-bottom: calc(173 / 960 * 100%);
+  padding-left: 1rem;
 }
 
 @media (min-width: 768px) {
