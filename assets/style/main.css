@@ -85,7 +85,7 @@ p {
     padding: 23px 20px;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 768px) {
     .hamburger-button {
         display: none;
     }
@@ -114,22 +114,7 @@ p {
     left: 100%;
 }
 
-/* @media (min-width: 768px) {
-    .hamburger-menu {
-        position: static;
-        display: flex;
-        max-width: 811.7px;
-        justify-content: space-between;
-        visibility: visible;
-        opacity: 100%;
-        background-color: #fff;
-        align-items: center;
-        padding-top: 1.1rem;
-        padding-left: 1.2rem;
-    }
-} */
-
-@media (min-width: 990px) {
+@media (min-width: 768px) {
     .hamburger-menu {
         position: static;
         display: flex;
@@ -143,6 +128,21 @@ p {
         padding-left: 1.2rem;
     }
 }
+
+/* @media (min-width: 990px) {
+    .hamburger-menu {
+        position: static;
+        display: flex;
+        max-width: 811.7px;
+        justify-content: space-between;
+        visibility: visible;
+        opacity: 100%;
+        background-color: #fff;
+        align-items: center;
+        padding-top: 1.1rem;
+        padding-left: 1.2rem;
+    }
+} */
 
 /* カバーイン後の位置指定 --*/
 .hamburger-menu-active {
@@ -269,9 +269,11 @@ p {
     position: relative;
 }
 
+
+
 @media (min-width: 768px) {
     .cover {
-        margin-top: 6.426rem;
+        margin-top: 120px;
     }
 }
 
@@ -284,13 +286,13 @@ p {
     height: 4.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 975px) {
     .cover-catch img {
         height: 9.975rem;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 975px) {
     .cover-catch .frame_right {
         padding-left: 1rem;
     }
@@ -301,7 +303,7 @@ p {
     font-size: 11px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 975px) {
     .pass-rate {
         line-height: 1;
         font-size: 1.25rem;
@@ -324,7 +326,7 @@ p {
     font-size: 2.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 975px) {
     .pass-rank {
         font-size: 3.375rem;
         padding-top: 0.6rem;
@@ -332,7 +334,7 @@ p {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 975px) {
     .pass-rank span {
         font-size: 4.5rem;
     }
@@ -349,7 +351,7 @@ p {
     color: #333;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 975px) {
     .target-audience {
         font-size: 2.063rem;
     }
@@ -361,13 +363,6 @@ p {
     font-weight: 900;
     color: #005BAC;
 }
-
-/* @media (min-width: 768px) {
-    .briefing-session {
-        font-size: 3.75rem;
-        padding-top: 0.2rem;
-    }
-} */
 
 @media (min-width: 1373px) {
     .briefing-session {
@@ -399,8 +394,13 @@ p {
     margin-top: 2.1rem;
 }
 
+@media (min-width: 800px) {
+    .cover-content {
+        width: 80%;
+    }
+}
 
-@media (min-width: 768px) {
+@media (min-width: 971px) {
     .cover-content {
         max-width: 1100px;
     }
@@ -439,7 +439,7 @@ p {
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1161px) {
     .button {
         min-width: 21.55rem;
         font-size: 1.5rem;
@@ -452,7 +452,7 @@ p {
     margin-top: 1.363rem;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1161px) {
     .three_points {
         margin-top: 0;
         display: flex;
@@ -480,7 +480,6 @@ p {
 
 .btn_admission:hover {
     color: #fff;
-    /*  border-color: #BAE498; */
 opacity: 0.6;
 }
 
@@ -491,7 +490,6 @@ opacity: 0.6;
 
 .btn_experience:hover {
     color: #fff;
-    /* background-color: #FAD47E; */
     opacity: 0.6;
 }
 
@@ -502,7 +500,6 @@ opacity: 0.6;
 
 .btn_document:hover {
     color: #fff;
-    /* background-color: #9BE3D5; */
     opacity: 0.6;
 }
 
