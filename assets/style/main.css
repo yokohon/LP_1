@@ -125,24 +125,8 @@ p {
         background-color: #fff;
         align-items: center;
         padding-top: 1.1rem;
-        padding-left: 1.2rem;
     }
 }
-
-/* @media (min-width: 990px) {
-    .hamburger-menu {
-        position: static;
-        display: flex;
-        max-width: 811.7px;
-        justify-content: space-between;
-        visibility: visible;
-        opacity: 100%;
-        background-color: #fff;
-        align-items: center;
-        padding-top: 1.1rem;
-        padding-left: 1.2rem;
-    }
-} */
 
 /* カバーイン後の位置指定 --*/
 .hamburger-menu-active {
@@ -258,6 +242,7 @@ p {
         padding-left: 2.5rem;
         padding-bottom: 0.838rem;
         margin: 0;
+        margin-right: 20px;
     }
 }
 
@@ -273,7 +258,7 @@ p {
 
 @media (min-width: 768px) {
     .cover {
-        margin-top: 120px;
+        margin-top: 103px;
     }
 }
 
@@ -517,7 +502,7 @@ opacity: 0.6;
 }
 
 @media (min-width: 768px) {
-    .point-content {
+    .point_content {
         padding-top: 2.888rem;
     }
 }
@@ -603,7 +588,7 @@ opacity: 0.6;
     }
 }
 
-.point-text h2 {
+.point-text h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: Bold;
@@ -614,7 +599,7 @@ opacity: 0.6;
 }
 
 @media (min-width: 768px) {
-    .point-text h2 {
+    .point-text h3 {
         font-size: 1.75rem;
         line-height: 1;
         margin-top: 6.5px;
@@ -622,24 +607,24 @@ opacity: 0.6;
     }
 }
 
-.point-text_2 h2 {
+.point-text_2 h3 {
     margin-top: 8px;
 }
 
 @media (min-width: 768px) {
-    .point-text_2 h2 {
+    .point-text_2 h3 {
         margin-top: 9px;
         line-height: 1;
     }
 }
 
-.point-text_3 h2 {
+.point-text_3 h3 {
     margin-top: 9px;
 }
 
 
 @media (min-width: 768px) {
-    .point-text_3 h2 {
+    .point-text_3 h3 {
         margin-top: 10px;
 
     }
@@ -1127,11 +1112,13 @@ table td {
 @media (min-width: 768px) {
     .price-course {
         width: 73px;
+        letter-spacing: 1px;
     }
 }
 
 .price-list {
     width: 225px;
+    letter-spacing: 1.3px;
 }
 
 .price-list-text {
