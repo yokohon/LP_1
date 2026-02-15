@@ -402,6 +402,7 @@ p {
         margin-top: 6.25rem;
     }
 }
+
 /* 3つのボタン */
 .button {
     display: block;
@@ -465,7 +466,7 @@ p {
 
 .btn_admission:hover {
     color: #fff;
-opacity: 0.6;
+    opacity: 0.6;
 }
 
 .btn_experience {
@@ -778,7 +779,6 @@ opacity: 0.6;
 }
 
 .session_btn:hover {
-    /* background-color: #A4C5ED; */
     opacity: 0.6;
 }
 
@@ -786,11 +786,33 @@ opacity: 0.6;
     .session_btn {
         max-width: 22.6rem;
         font-size: 1.5rem;
-        margin: auto;
         padding-left: 1.4rem;
     }
 }
 
+.btn_experience-big {
+    font-size: 1.25rem;
+    max-width: 19.125em;
+    padding-top: 1.013rem;
+    padding-bottom: 1.113rem;
+}
+
+@media (min-width: 768px) {
+    .btn_experience-big {
+        max-width: 22.6rem;
+        font-size: 1.5rem;
+        padding-left: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .briefing_session-btn {
+        display: flex;
+        column-gap: 2.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 /* コース・目的 */
 .corse_content {
