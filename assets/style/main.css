@@ -769,6 +769,28 @@ p {
     }
 }
 
+.briefing_session-btn .button {
+    max-width: none;
+    width: 100%;
+}
+
+
+.briefing_session-btn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .briefing_session-btn {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 .session_btn {
     background-color: #0271E0;
@@ -805,14 +827,6 @@ p {
     }
 }
 
-@media (min-width: 768px) {
-    .briefing_session-btn {
-        display: flex;
-        column-gap: 2.2rem;
-        justify-content: center;
-        align-items: center;
-    }
-}
 
 /* コース・目的 */
 .corse_content {
