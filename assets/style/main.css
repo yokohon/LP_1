@@ -1264,10 +1264,17 @@ table td {
 }
 
 /* 790基本 */
+.briefing_session-btn {
+    align-items: center;
+    justify-content: center;
+}
+
+
 .briefing_session-btn .button {
     /* max-width: none; */
     width: 100%;
     max-width: 19.125rem;
+    margin: 0;
 
 }
 
